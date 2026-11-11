@@ -11,7 +11,6 @@ import {
 export default function SinglePageWebsite() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [activeFacility, setActiveFacility] = useState<any>(null);
   const [calculated, setCalculated] = useState(false);
   const [formData, setFormData] = useState({
     name: "", email: "", phone: "", organization: "", message: "",
@@ -29,7 +28,6 @@ export default function SinglePageWebsite() {
   // --- DATA ---
   const navLinks = [
     { label: "Home", href: "#home" },
-    { label: "About", href: "#about" },
     { label: "Services", href: "#services" },
     { label: "Sectors", href: "#sectors" },
     { label: "Projects", href: "#projects" },
